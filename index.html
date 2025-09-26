@@ -4,169 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Armel</title>
-  <style>
-    /* Style général */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: white; /* Fond blanc */
-      color: #333;
-    }
-
-    header {
-      background-color: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #ff9800;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .hero img {
-      width: 250px;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
-    }
-
-    .hero img:hover {
-      transform: scale(1.05);
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #ff9800;
-    }
-
-    .services ul {
-      list-style: square;
-      padding-left: 40px;
-    }
-
-    table {
-      border-collapse: collapse;
-      margin: auto;
-      width: 80%;
-    }
-
-    table, th, td {
-      border: 1px solid #333;
-      padding: 10px;
-      text-align: center;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: auto;
-      gap: 15px;
-    }
-
-    input, textarea, button {
-      padding: 10px;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: #ff9800;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #e68900;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-  </style>
+  <!-- Import Google Fonts Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <!-- HEADER & NAVIGATION -->
-  <header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#work">Travail</a></li>
-        <li><a href="fichier/armelstakisble.cv.pdf" download="Mon_CV.pdf">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="header">
+    <h1 class="site-title">Mon Portfolio</h1>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a href="#about">À propos</a></li>
+        <li class="nav-item"><a href="#work">Travail</a></li>
+        <li class="nav-item"><a href="fichier/armelstakisble.cv.pdf" download="Mon_CV.pdf">CV</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- HERO -->
   <section id="accueil" class="hero">
-    <img src="image/img.profile.hero.jpg" alt="Photo de profil">
-    <h2>Bienvenue sur mon Portfolio</h2>
-    <p>Je suis Armel, développeur Web passionné.</p>
+    <img src="image/img.profile.hero.jpg" alt="Photo de profil" class="profile-img">
+    <h2 class="section-title">Bienvenue sur mon Portfolio</h2>
+    <p class="intro-text">Je suis Armel, développeur Web passionné.</p>
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Je suis développeur Web. J'ai obtenu mon baccalauréat au lycée technique d'Abidjan Cocody. 
-       Mon objectif est de créer des sites modernes, rapides et efficaces pour aider les entreprises à se développer,
-      je suivie une formation en developpement web a Gomycode' je seraient ravi de travaller avec vous et donner vie
-      a vos idée contacter moi pour en savoir plus et noublier pas vous aves les idée j'jai le code .</p>
+  <section id="about" class="about">
+    <h2 class="section-title">À propos</h2>
+    <p class="about-text">
+      Je suis développeur Web. J'ai obtenu mon baccalauréat au lycée technique d'Abidjan Cocody. 
+      Mon objectif est de créer des sites modernes, rapides et efficaces pour aider les entreprises à se développer.
+      Je suis actuellement en formation en développement web chez Gomycode. 
+      Je serais ravi de travailler avec vous et de donner vie à vos idées. Contactez-moi !
+    </p>
+    <video autoplay muted loop playsinline width="400" class="about-video">
+  <source src="video/videocodage.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la vidéo.
+</video>
 
-
-    <!-- Ajout d'une vidéo -->
-    <video controls width="400">
-      <source src="presentation.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la vidéo.
-    </video>
   </section>
+
 
 
 
   <!-- WORK -->
-  <section id="work">
-    <h2>Travail</h2>
+  <section id="work" class="work">
+    <h2 class="section-title">Travail</h2>
     <div class="services">
       <p>Voici mes services :</p>
-      <ul>
+      <ul class="service-list">
         <li>Création de sites internet modernes</li>
         <li>Optimisation SEO</li>
         <li>Design responsive</li>
@@ -175,8 +65,8 @@
 
 
 
-    <!-- Exemple tableau -->
-    <table>
+
+    <table class="tarif-table">
       <tr>
         <th>Service</th>
         <th>Tarif</th>
@@ -193,24 +83,26 @@
 
 
 
-    <!-- Ajout d'un audio -->
 
-    <audio controls>
-      <source src="audio.mp3" type="audio/mp3">
+
+
+    <audio controls class="work-audio">
+      <source src="audio/vocal.opus" type="audio/mp3">
       Votre navigateur ne supporte pas l'audio.
     </audio>
   </section>
 
 
 
+
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email : armelstakisble@gmail.com</p>
 
-    <h2>Contact</h2>
-    <p>Numéro : +225 01 40 51 85 23</p>
-    <p>Email : armelstakisble@.com</p>
 
-    <form>
+
+    <form class="contact-form">
       <label for="name">Nom :</label>
       <input type="text" id="name" name="name" required>
 
@@ -220,12 +112,12 @@
       <label for="message">Message :</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Envoyer</button>
+      <button type="submit" class="btn">Envoyer</button>
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Mon Portfolio - Tous droits réservés</p>
   </footer>
 
